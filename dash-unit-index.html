@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Urban Energy</title>
+    <link rel="stylesheet" href="css/uikit.almost-flat.css"/>
+</head>
+<body>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/uikit.min.js"></script>
+
+<nav class="uk-navbar">
+    <div class="uk-hidden-small">
+        <a href="#" class="uk-navbar-brand">Urban Energy</a>
+        <ul class="uk-navbar-nav">
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="ledger-add.html">Додати результат</a></li>
+            <li><a href="#">Вимірювання</a></li>
+            <li><a href="#">Звіти</a></li>
+        </ul>
+        <div class="uk-navbar-flip">
+            <ul class="uk-navbar-nav">
+                <li><a href="#">Налаштування</a></li>
+                <li><a href="#">Вихід</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="uk-visible-small">
+        <a href="#offcanvas" class="uk-navbar-toggle" data-uk-offcanvas></a>
+        <a href="#" class="uk-navbar-brand uk-navbar-center">Urban Energy</a>
+    </div>
+</nav>
+
+<div class="uk-container uk-container-center uk-margin-top uk-responsive-width uk-responsive-height">
+
+    <ul class="uk-breadcrumb">
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="#">Налаштування</a></li>
+        <li class="uk-active"><span>Об'єкти АТУУ</span></li>
+    </ul>
+
+    <div class="uk-grid" data-uk-grid-margin>
+
+        <div class="uk-hidden-small uk-width-medium-1-5 uk-width-large-1-6">
+            <div class="uk-panel uk-panel-box">
+                <h3 class="uk-panel-title">Налаштування</h3>
+                <ul class="uk-nav uk-nav-side">
+                    <li><a href="#">Ресурси</a></li>
+                    <li><a href="#">Типи обєктів АТУУ</a></li>
+                    <li><a href="#">Галузі</a></li>
+                    <li class="uk-active"><a href="dash-unit-index.html">Об'єкти АТУУ</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="uk-panel uk-width-small-1-1 uk-width-medium-4-5 uk-width-large-5-6">
+            <div class="uk-overflow-container">
+                <table class="uk-table uk-table-hover uk-table-striped uk-table-condensed">
+                    <thead>
+                    <tr>
+                        <th>№</th>
+                        <th>Назва</th>
+                        <th>parent</th>
+                        <th>Тип</th>
+                        <th>Галузь</th>
+                        <th>Об'єкт КОАТУУ</th>
+                        <th>Активний?</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>2</td>
+                        <td>Якась організація 2</td>
+                        <td>Сільрада Мала Олкнсандрівка</td>
+                        <td>Організація</td>
+                        <td>Так собі галузь</td>
+                        <td>59 206 810 03</td>
+                        <td><input type="checkbox" disabled checked></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Якась організація</td>
+                        <td>Сільрада Мала Олкнсандрівка</td>
+                        <td>Організація</td>
+                        <td>Так собі галузь</td>
+                        <td>59 206 810 03</td>
+                        <td><input type="checkbox" disabled checked></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Якась організація 3</td>
+                        <td>Сільрада Мала Олкнсандрівка</td>
+                        <td>Організація</td>
+                        <td>Так собі галузь</td>
+                        <td>59 206 810 03</td>
+                        <td><input type="checkbox" disabled checked></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <ul class="uk-pagination">
+                    <li class="uk-disabled">
+                        <span>
+                        <i class="uk-icon-angle-double-left"></i>
+                        </span>
+                    </li>
+                    <li class="uk-active">
+                        <span>1</span>
+                    </li>
+                    <li>
+                        <span>...</span>
+                    </li>
+                    <li>
+                        <span>3</span>
+                    </li>
+                    <li class="uk-disabled">
+                        <span>
+                        <i class="uk-icon-angle-double-right"></i>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="offcanvas" class="uk-offcanvas">
+        <div class="uk-offcanvas-bar">
+            <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav>
+                <li><a href="index.html">Головна</a></li>
+                <li class="uk-nav-divider"></li>
+                <li><a href="ledger-add.html">Додати результат</a></li>
+                <li><a href="#">Вимірювання</a></li>
+                <li><a href="#">Звіти</a></li>
+                <li class="uk-nav-divider"></li>
+                <li class="uk-parent">
+                    <a href="#">Налаштування</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="#">Ресурси</a></li>
+                        <li><a href="#">Типи обєктів АТУУ</a></li>
+                        <li><a href="#">Галузі</a></li>
+                        <li><a href="dash-unit-index.html">Об'єкти АТУУ</a></li>
+                    </ul>
+                </li>
+                <li class="uk-nav-divider"></li>
+                <li><a href="#">Вихід</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
