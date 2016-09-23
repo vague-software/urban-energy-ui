@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/uikit.css"/>
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"
+        integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+        crossorigin="anonymous"></script>
+<script src="js/uikit.min.js"></script>
+
+
+<nav class="uk-navbar">
+    <div class="uk-hidden-small">
+        <a href="#" class="uk-navbar-brand">Urban Energy</a>
+        <ul class="uk-navbar-nav">
+            <li><a href="#">Головна</a></li>
+            <li><a href="#">Додати результат</a></li>
+            <li><a href="#">Вимірювання</a></li>
+            <li><a href="#">Звіти</a></li>
+        </ul>
+        <div class="uk-navbar-flip">
+            <ul class="uk-navbar-nav">
+                <li><a href="#">Налаштування</a></li>
+                <li><a href="#">Вихід</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="uk-visible-small">
+        <a href="#offcanvas" class="uk-navbar-toggle" data-uk-offcanvas></a>
+        <a href="#" class="uk-navbar-brand uk-navbar-center">Urban Energy</a>
+    </div>
+</nav>
+
+<div id="offcanvas" class="uk-offcanvas">
+    <div class="uk-offcanvas-bar">
+        <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav>
+            <li><a href="#">Головна</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#">Додати результат</a></li>
+            <li><a href="#">Вимірювання</a></li>
+            <li><a href="#">Звіти</a></li>
+            <li class="uk-nav-divider"></li>
+            <li class="uk-parent">
+                <a href="#">Налаштування</a>
+                <ul class="uk-nav-sub">
+                    <li><a href="#">Ресурси</a></li>
+                    <li><a href="#">Типи обєктів АТУУ</a></li>
+                    <li><a href="#">Галузі</a></li>
+                </ul>
+            </li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#">Вихід</a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
